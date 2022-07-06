@@ -1,0 +1,71 @@
+/* Gallery section */
+.portfolio {
+    width: 100%;
+    padding-bottom: 90px;
+    & .wrapper {
+      width: 84%;
+    }
+    & h2 {
+      padding-top: 100px;
+      padding-bottom: 20px;
+      position: relative;
+      font-size: 35px;
+      text-align: center;
+      &::after {
+        content: "";
+        width: 6.5%;
+        display: block;
+        border-bottom: 3px solid map-get($colors, button-bg-color);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 47%;
+        float: left;
+      }
+    }
+    & p {
+      padding-top: 20px;
+      margin-bottom: 60px;
+      color: map-get($colors, list-text-color);
+      font-size: 17.5px;
+      text-align: center;
+    }
+  }
+  
+  .list-type {
+    text-align: center;
+    & li {
+      margin: 0 1% 40px;
+      display: inline-block;
+    }
+    & a {
+      padding: 8px 15px;
+      background: #e6e6e6;
+      border: 0;
+      border-radius: 4px;
+      color: #555;
+      font-size: 14px;
+      font-weight: 400;
+      border-radius: 4px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.5s ease-in;
+      &:hover {
+        background: map-get($colors, button-bg-color);
+        color: map-get($colors, banner-font-color);
+      }
+      &.active {
+        background: map-get($colors, button-bg-color);
+        color: map-get($colors, banner-font-color);
+      }
+    }
+  }
+  
+  .portfolio-items {
+    width: 100%;
+    & .portfolio-item {
+      width: 33%;
+      padding: 15px 1%;
+    }
+  }
+  

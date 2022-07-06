@@ -1,0 +1,59 @@
+/* footer */
+footer {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: map-get($colors, footer-bg);
+    & .wrapper {
+      width: 84%;
+      text-align: center;
+    }
+    & li {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 0 1.8%;
+      background-color: map-get($colors, icons-bg);
+    }
+    & a {
+      padding-top: 10px;
+      margin-bottom: 20px;
+      color: map-get($colors, button-bg-color);
+      font-size: 22px;
+    }
+    & p {
+      margin-top: 50px;
+      color: map-get($colors, list-text-color);
+      & span {
+        color: map-get($colors, banner-text-color);
+      }
+    }
+  }
+  
+  .facebook,
+  .twitter,
+  .Google {
+    text-indent: -9999px;
+  }
+  
+  .facebook::after {
+    content: "\f09a";
+    font-family: "fontawesome";
+    float: left;
+    text-indent: 0;
+  }
+  
+  .twitter::after {
+    content: "\f099";
+    font-family: "fontawesome";
+    text-indent: 0;
+    float: left;
+  }
+  
+  .Google::after {
+    content: "\f0d5";
+    font-family: "fontawesome";
+    text-indent: 0;
+    float: left;
+  }
+  

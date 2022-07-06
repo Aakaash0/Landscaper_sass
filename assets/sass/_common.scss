@@ -1,0 +1,44 @@
+/*  
+1.2. Clear Fix
+==========================  */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+// for all
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*  for wrapper  */
+.wrapper {
+  max-width: 1360px;
+  width: 86%;
+  margin: 0 auto;
+}

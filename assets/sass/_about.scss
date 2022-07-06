@@ -1,0 +1,79 @@
+/* About section */
+
+.about {
+    width: 100%;
+    padding: 50px 0;
+    & .wrapper {
+      width: 84%;
+    }
+    & ul {
+      width: 100%;
+      display: flex;
+    }
+  }
+  
+  .about-text {
+    width: 100%;
+    padding-right: 2%;
+    position: relative;
+    & h2 {
+      padding-bottom: 30px;
+      font-size: 36px;
+      font-weight: normal;
+      & span {
+        color: map-get($colors, button-bg-color);
+      }
+      &::after {
+        content: "";
+        width: 12%;
+        display: block;
+        border-bottom: 3px solid green;
+        position: absolute;
+        top: 18%;
+        float: left;
+      }
+    }
+    & p {
+      padding: 13px 0;
+      line-height: 1.4;
+      color: map-get($colors, font-color);
+      font-size: 15px;
+    }
+  
+    & a {
+      width: 36%;
+      padding: 14px 3.2%;
+      margin-top: 35px;
+      background-color: map-get($colors, button-bg-color);
+      color: map-get($colors, banner-font-color);
+      font-size: 16px;
+      text-transform: uppercase;
+      &:hover {
+        background-color: map-get($colors, banner-font-color);
+        color: map-get($colors, button-bg-color);
+      }
+    }
+  }
+  
+  .garden-text {
+    padding-left: 1%;
+    width: 46%;
+    height: 100%;
+    & h3 {
+      padding: 16px 0;
+      font-size: 20px;
+      font-weight: normal;
+    }
+  
+    & p {
+      line-height: 1.4;
+      color: map-get($colors, font-color);
+      font-size: 15px;
+    }
+  }
+  
+  .card {
+    @extend .garden-text;
+    padding-left: 2%;
+  }
+  

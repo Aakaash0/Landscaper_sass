@@ -1,0 +1,60 @@
+/* Services */
+.services {
+    width: 100%;
+    background-color: map-get($colors, button-bg-color);
+  
+    & .wrapper {
+      width: 83%;
+      // position: relative;
+    }
+  
+    & h2 {
+      padding-top: 115px;
+      padding-bottom: 20px;
+      position: relative;
+      font-size: 35px;
+      color: map-get($colors, banner-font-color);
+      text-align: center;
+      &::after {
+        content: "";
+        width: 6.5%;
+        display: block;
+        border-bottom: 3px solid map-get($colors, banner-font-color);
+        position: absolute;
+        right: 0;
+        bottom: 0%;
+        left: 48%;
+        float: left;
+      }
+    }
+    & p {
+      padding-top: 20px;
+      margin-bottom: 60px;
+      color: map-get($colors, banner-font-color);
+      font-size: 17.5px;
+      text-align: center;
+    }
+  }
+  
+  .service {
+    padding-top: 25px;
+    display: flex;
+    gap: 60px;
+    & li {
+      width: 20%;
+      text-align: center;
+      & img {
+        border-radius: 50%;
+      }
+  
+      & h3 {
+        margin-top: 23px;
+        color: map-get($colors, banner-font-color);
+        font-size: 20px;
+      }
+      & p {
+        font-size: 14px;
+      }
+    }
+  }
+  

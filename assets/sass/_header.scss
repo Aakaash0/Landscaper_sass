@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    padding: 28px 0;
+    background-color: map-get($colors, footer-bg);
+    & .wrapper {
+      width: 84%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    & nav {
+      width: 52%;
+    }
+    & li {
+      padding-left: 6.5%;
+    }
+  }
+  
+  .nav-bar li a {
+    color: map-get($colors, banner-font-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    &:hover {
+      border-bottom: 1px solid map-get($colors, font-icon-color);
+    }
+  }
+  

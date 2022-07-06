@@ -1,0 +1,103 @@
+/* Contact us */
+.contact {
+    width: 100%;
+    background-color: #f6f6f6;
+    & .wrapper {
+      width: 70%;
+    }
+    & h2 {
+      padding-top: 100px;
+      padding-bottom: 20px;
+      position: relative;
+      font-size: 35px;
+      text-align: center;
+      &::after {
+        content: "";
+        width: 6.5%;
+        display: block;
+        border-bottom: 3px solid map-get($colors, button-bg-color);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 47%;
+        float: left;
+      }
+    }
+    & p {
+      padding-top: 20px;
+      margin-bottom: 70px;
+      color: map-get($colors, list-text);
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: center;
+    }
+    & h3 {
+      margin-top: 70px;
+      margin-bottom: 30px;
+      font-size: 17.5px;
+      font-weight: 550;
+      text-align: center;
+    }
+  }
+  
+  .contact-info {
+    & .contact-name {
+      width: 31%;
+      text-align: center;
+      & h3 {
+        padding-bottom: 10px;
+        position: relative;
+        &::after {
+          content: "";
+          width: 20%;
+          display: block;
+          border-bottom: 3px solid map-get($colors, list-text-color);
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 40%;
+          float: left;
+        }
+      }
+      & p {
+        padding-top: 15px;
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .contact-form {
+    text-align: center;
+    & input {
+      width: 38%;
+      padding: 10px 2%;
+      margin-right: 3%;
+      font-size: 15px;
+    }
+  
+    & textarea {
+      width: 79.7%;
+      padding: 20px 2%;
+      margin: 20px 3% 30px 0;
+      font-size: 15px;
+    }
+  
+    & button {
+      width: 19%;
+      padding: 14px 0;
+      border: none;
+      border-radius: 5px;
+      margin-top: 35px;
+      margin-bottom: 90px;
+      background-color: map-get($colors, button-bg-color);
+      color: map-get($colors, banner-font-color);
+      font-size: 15px;
+      text-transform: uppercase;
+      &:hover {
+        background-color: map-get($colors, banner-font-color);
+        color: map-get($colors, button-bg-color);
+      }
+    }
+  }
+  

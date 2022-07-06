@@ -1,0 +1,71 @@
+/* Testimonial section */
+
+.text-center {
+    width: 100%;
+    background-image: linear-gradient(to top, #649e2ecc, #649e2eba),
+      url(../images/testimonials-bg.jpg);
+    height: auto;
+    & .wrapper {
+      width: 70%;
+      text-align: center;
+    }
+    & h2 {
+      padding-top: 100px;
+      padding-bottom: 20px;
+      position: relative;
+      color: map-get($colors, banner-font-color);
+      font-size: 35px;
+      text-align: center;
+      &::after {
+        content: "";
+        width: 6.5%;
+        display: block;
+        border-bottom: 3px solid map-get($colors, banner-font-color);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 47%;
+        float: left;
+      }
+    }
+    & p {
+      padding-top: 40px;
+      margin-bottom: 20px;
+      color: map-get($colors, banner-font-color);
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: center;
+    }
+    & span {
+      padding-bottom: 20px;
+      color: map-get($colors, banner-font-color);
+      font-size: 15px;
+    }
+  }
+  
+  .dots {
+    padding-bottom: 110px;
+    margin-top: 25px;
+  
+    & .dot {
+      margin: 0 2px;
+      color: map-get($colors, banner-text-color);
+      font-size: 12px;
+      text-indent: -9999px;
+  
+      &::after {
+        content: "\f111";
+        float: right;
+        font-family: "fontAwesome";
+        text-indent: 0;
+      }
+      &:hover {
+        color: map-get($colors, banner-font-color);
+        transition: 0.5s ease-in;
+      }
+    }
+    & .dot-active {
+      color: map-get($colors, banner-font-color);
+    }
+  }
+  

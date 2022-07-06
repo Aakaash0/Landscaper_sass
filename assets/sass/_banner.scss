@@ -1,0 +1,57 @@
+/* Banner section */
+
+.banner {
+    width: 100%;
+    & .wrapper {
+      width: 100%;
+      position: relative;
+    }
+    & ul {
+      position: relative;
+    }
+  }
+  
+  .banner__slider__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 42%;
+    right: 0;
+    left: 0;
+    text-align: center;
+  
+    & h3 {
+      color: map-get($colors, banner-font-color);
+      font-size: 55px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  
+    & p {
+      padding-top: 18px;
+      color: map-get($colors, banner-font-color);
+      font-size: 22px;
+      font-weight: 500;
+    }
+    & span {
+      padding-top: 5px;
+      color: map-get($colors, banner-font-color);
+      font-size: 22px;
+      font-weight: 500;
+    }
+    & a {
+      width: 11%;
+      padding: 14px 0;
+      margin-top: 42px;
+      background-color: map-get($colors, button-bg-color);
+      color: map-get($colors, banner-font-color);
+      font-size: 16px;
+      text-transform: uppercase;
+      &:hover {
+        background-color: map-get($colors, banner-font-color);
+        color: map-get($colors, button-bg-color);
+      }
+    }
+  }
+  
